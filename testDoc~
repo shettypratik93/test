@@ -1,2 +1,7 @@
 test 12345
 new change in child branch
+<<<<<<< HEAD
+hello
+=======
+riddhi changed
+>>>>>>> c9e773b7eb155a9f58d90e773ffa672d2c7a2c14
