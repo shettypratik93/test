@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login Form</title>
+    <link href="reg.css" rel="stylesheet" type="text/css">
+    <script lang="javascript" type="text/javascript" src="reg.js">
+            </script>
+</head>
+<body id="mbody">
+    <div class="head">
+        <img align="center" class="left" height="58px" src="left.png" width=
+        "53px"> <img class="logo" src="ins.png"> <label class=
+        "head-name">Interview Air</label> <a href="#"><img class="right" src=
+        "home.png"></a>
+        <ul class="drp">
+            <li><img height="30px" src="setting.jpg" width="30px">Setting</li>
+            <li><img height="30px" src="logo.png" width="30px">Logout</li>
+        </ul>
+    </div>
+    <div class="main">
+        <form id="form1" method="post" name="form1">
+            <table align="center" cellspacing="10" class="table-form">
+                <tr>
+                    <td>First Name<input class="txtname" id="txtfname"
+                    maxlength="50" oninput="namecheck()" type="textfield"></td>
+                    <td><select class="txtname" id="s1" name="States" onchange=
+                    "stateC()">
+                        <option value="States">
+                            States
+                        </option>
+                        <option value="Maharashtra">
+                            Maharashtra
+                        </option>
+                        <option value="Delhi">
+                            Delhi
+                        </option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Last Name<input class="txtname" id="txtlname"
+                    maxlength="50" oninput="Lnamecheck()" type=
+                    "textfield"></td>
+                    <td><select class="txtname" id="d1" name="cities">
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Gender<input checked class="rdobtn" id="r1" name=
+                    "gender" type="radio" value="male">Male <input id="r2"
+                    name="gender" type="radio" value="female">Female</td>
+                    <td><select class="txtname" id="col1">
+                        <option value="College">
+                            College
+                        </option>
+                        <option value="VJTI">
+                            VJTI
+                        </option>
+                        <option value="K.J.Somaiya">
+                            K.J.Somaiya*
+                        </option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>
+                        Address<br>
+                        <hr>
+                        <textarea cols="30" id="add" maxlength="250" oninput=
+                        "Addnamecheck()" rows="4"></textarea>
+                    </td>
+                    <td>
+                        Subject<br>
+                        <hr>
+                        <input class="sub" id="c1" type="checkbox" value=
+                        "Accounting"> Accounting <input class="sub" id="c2"
+                        type="checkbox" value="Art History"> ArtHistory<br>
+                        <input class="sub" id="c3" type="checkbox" value=
+                        "Biology"> Biology &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="sub" id="c4" type="checkbox" value=
+                        "Computer"> Computer<br>
+                        <input class="sub" id="c5" type="checkbox" value=
+                        "Engineering"> Engineering <input class="sub" id="c6"
+                        type="checkbox" value="Geography">Geography
+                    </td>
+                </tr>
+                <tr>
+                    <td><input onclick="Cancel()" type="button" value=
+                    "Cancel"></td>
+                    <td><input onclick="savecheck()" type="button" value=
+                    "Save"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
