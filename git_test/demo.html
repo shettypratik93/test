@@ -14,11 +14,11 @@
         <img align="center" class="left" height="58px" src="left.png" width=
         "53px"> <img class="logo" src="ins.png"> <label class=
         "head-name">Interview Air</label> <a href="#"><img class="right" src=
-        "home.png"></a>
+        "home.png">
         <ul class="drp">
-            <li><img height="30px" src="setting.jpg" width="30px">Setting</li>
-            <li><img height="30px" src="logo.png" width="30px">Logout</li>
-        </ul>
+            <li class="li1"><img height="30px" src="setting.jpg" width="30px">Setting</li>
+            <li class="li2"><img height="30px" src="Logo.png" width="30px">Logout</li>
+        </ul></a>
    		</div>
 
 
@@ -28,15 +28,15 @@
             <div class="content-div-one">
 
                  <span class="fntxt">First Name: <input class="control-form"
-                name="txtname" size="10" type="text" maxlength="50"></span><br>
+                id="fn" name="txtname" size="10" type="text" maxlength="50"></span><br>
                 <span class="fntxt">Last Name: <input class="control-form"
-                name="txtlname" size="10" type="text" maxlength="50"></span><br>
+                id="ln" name="txtlname" size="10" type="text" maxlength="50"></span><br>
                 <span class="fntxt">Gender: &nbsp;&nbsp;&nbsp;<input checked class="control-form" name=
                 "gender" type="radio" value="gender">Female
                 <input class="control-form" name="gender" type="radio" id="gender1"
                 value="male"> Male <br></span>
                 Address:<br>
-                <textarea class="control-form-tarea" cols="32" name="txtaddr" placeholder="Address" rows="5" maxlength="250" required>
+                <textarea class="control-form-tarea" id="addr" cols="32" name="txtaddr" placeholder="Address" rows="5" maxlength="250" required>
                 </textarea>
             </div>
             <div class="content-div-two">
@@ -71,25 +71,25 @@
 
 
 
-                <span class="fntxt">Subject:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+                <span class="fntxt"><label id-"subject"> Subject:</label>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
                 <table>
                     <tr>
                         <td><input class="control-form-course" name=
-                        "crse" type="checkbox" value="account"> Accounting</td>
+                        "crse" type="checkbox" value="account" id="csub"> Accounting</td>
                         <td><input class="control-form-course" name="crse"
-                        type="checkbox" value="art"> Art History</td>
+                        type="checkbox" value="art" id="csub"> Art History</td>
                     </tr>
                     <tr>
                         <td><input class="control-form-course" name="crse"
-                        type="checkbox" value="bio"> Biology</td>
+                        type="checkbox" value="bio" id="csub"> Biology</td>
                         <td><input class="control-form-course" name="crse"
-                        type="checkbox" value="computer"> Computer</td>
+                        type="checkbox" value="computer" id="csub"> Computer</td>
                     </tr>
                     <tr>
                         <td><input class="control-form-course" name="crse"
-                        type="checkbox" value="engg"> Engineering</td>
+                        type="checkbox" value="engg" id="csub"> Engineering</td>
                         <td><input class="control-form-course" name="crse"
-                        type="checkbox" value="geog"> Geography</td>
+                        type="checkbox" value="geog" id="csub"> Geography</td>
                     </tr>
                 </table>
             </div>
@@ -102,12 +102,7 @@
 		<div id="result-div">
 
     	</div>
-
     </div>
-
-
-
 </body>
-
 
 </html>

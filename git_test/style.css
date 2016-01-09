@@ -1,12 +1,12 @@
 .head {
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-size: 100%;
     background-color: darkblue !important;
     /*height: 50px;*/
     text-align: center;
     top: auto;
     width: 100%;
-    height: 10%;
+    height: 7%;
 }
 
 .left{  float: left;
@@ -20,7 +20,7 @@
     margin-top: 1px;
     /*margin-bottom:10px;*/
     font-weight: 400;
-	font: 100px;
+	/*font: 100px;*/
 	text-align: center;
 	font-family: sans-serif;
 }
@@ -39,10 +39,11 @@
 .form-div
 {
     background-color: rgb(255,255,255);
-    height:500px;
-    width:1175px;
-    margin: 150px 50px 50px 50px;
+    height:70%;
+    width:91%;
+    margin: 50px 50px 50px 50px;
     overflow-y:auto; 
+    font-size: 20px;
 
 
 }
@@ -72,7 +73,7 @@
 .control-form
 {
     border:0px !important;
-     border-width:2px;  
+    border-width:2px;  
     border-bottom-style:solid;
     border-bottom-color: grey;
     margin-bottom: 20px;
@@ -82,7 +83,7 @@
 .fntxt
 {
     border:none;
-     border-width:2px;  
+    border-width:2px;  
     border-bottom-style:solid;
     border-bottom-color: black;
 
@@ -93,10 +94,23 @@
 
     padding-top: 350px;
     margin-left: 400px;
+
     padding-left: 100px;
 
-
 }
+
+
+/*ul.li1
+{
+    list-style-image: url("setting.jpg");
+}
+
+
+ul.li2
+{
+    list-style-image: url("Logo.png");
+
+}*/
 
 
 #btn-save
@@ -141,19 +155,23 @@
 }
 
 
- .mbody{
+#mbody{
      position: fixed;
       width: 100%;
       height: 100%;
-        background-color: rgb(238,237,238);
+    background-color: rgb(238,237,238);
     color: grey;
 
  }
  ul{
 
-    visibility:hidden;
+    display:none;
+    width:8%;
+    float:right;
+    margin-top: 50px;
+    margin-right: 0px;
  }
  a:hover ul
  {
-    visibility:visible;
+    display:block;
  }

@@ -1,0 +1,73 @@
+.head {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: darkblue !important;
+    /*height: 50px;*/
+    text-align: center;
+    top: auto;
+    width: 100%;
+    height: 10%;
+}
+.left{  float: left;
+	    height: 40px;
+        width: 40px; 
+}
+.head-name{
+    color: white;
+    font-size: 32px;
+    margin-top: 1px;
+    /*margin-bottom:10px;*/
+    font-weight: 400;
+	font: 100px;
+	text-align: center;
+	font-family: sans-serif;
+}
+.right{
+ height: 40px;
+ width: 40px; 
+ float: right;
+}
+.logo{
+ height: 45px;
+ width: 45px; 
+}
+.main{
+height: 80%; 
+width: 100%; 
+background-color: white;
+border:solid; 
+border-color: lightgrey;
+border-width:20px;
+}
+.table-form{
+	vertical-align:super;
+	background-color: white;
+	/*border-color: lightgrey;*/
+	border:100px;
+    border-collapse:collapse;
+    /* border: 5px solid lightgrey; */
+    width: 50%;
+    height: 50%; 
+    margin-top: 107px;
+ }
+ .txtname{
+ 	   border:none; 
+       border-bottom:1px solid lightgrey;
+
+ }
+ .rdobtn{
+ 	color:red;
+ }
+ .mbody{
+ 	 position: fixed;
+ 	  width: 100%;
+      height: 100%;
+ }
+ ul{
+
+ 	visibility:hidden;
+ }
+ a:hover ul
+ {
+ 	visibility:visible;
+ }
