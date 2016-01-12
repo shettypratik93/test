@@ -1,9 +1,40 @@
-<<<<<<< HEAD
+
+function dropdownlist(listindex) {
+
+        document.reg.subcategory.options.length = 0;
+        switch (listindex) {
+
+            case "Maharashtra":
+                document.reg.subcategory.options[0] = new Option("Mumbai", "");
+                document.reg.subcategory.options[1] = new Option("Pune", "");
+                document.reg.subcategory.options[2] = new Option("Satara", "");
+
+                break;
+
+            case "Gujarat":
+                document.reg.subcategory.options[0] = new Option("Ahmedabad", "");
+                document.reg.subcategory.options[1] = new Option("Gandhinagar", "");
+                document.reg.subcategory.options[2] = new Option("Baroda", "");
+
+                break;
+
+            case "Karnataka":
+                document.reg.subcategory.options[0] = new Option("Udupi", "");
+                document.reg.subcategory.options[1] = new Option("Banagalore", "");
+                document.reg.subcategory.options[2] = new Option("Karkala", "");
+
+                break;
+
+        }
+        return true;
+    };
+
 var flag=true;
 
 function validate()
 {	
 	var result="";
+
 
 	if(reg.crse[0].checked==false && reg.crse[1].checked==false && reg.crse[2].checked==false && reg.crse[3].checked==false && reg.crse[4].checked==false && reg.crse[5].checked==false  )
 	{
@@ -25,10 +56,9 @@ function validate()
 	result+="</br>"+"You selected "+chk_length+"subjects";*/
 	}
 
-
-		if(flag==true)
+    
+	if(flag==true)
 	{
-
 		var cb=document.getElementsByName("crse");
 		var checkboxesChecked = [];
  		for (var i=0; i<cb.length; i++) {
@@ -37,8 +67,6 @@ function validate()
     	 }
  		}
    	 	var chk_length=checkboxesChecked.length;	
-		
-
 		result+="Name: "+reg.txtname.value+" "+reg.txtlname.value+"</br>"+"Address: "+reg.txtaddr.value+"</br> No. of subjects: "+chk_length;
 
 		var radios = document.getElementsByName("gender");
@@ -50,20 +78,14 @@ function validate()
       					 break;
     			}
 		}
-
     	var r=document.getElementById("result-div");
     	 r.innerHTML=result;
 	}
 	
-
 	else
 		alert("Enter details");
-
-
 }
 
-}
- 
 
  function Fnameval(){
             var alf = /^[a-zA-Z]+$/;
@@ -80,7 +102,7 @@ function validate()
             } 
             }
 
-            function Lnameval(){
+ function Lnameval(){
             // var txtname=document.getElementById("txtfname").value;
             var alf = /^[a-zA-Z]+$/;
             console.log(ln.value);
@@ -96,8 +118,4 @@ function validate()
                 flag=true;
             } 
             }
-
-
-
-
 
