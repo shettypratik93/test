@@ -1,0 +1,22 @@
+{
+  "name": "BowerTest",
+  "homepage": "https://github.com/shettypratik93/test",
+  "authors": [
+    "pankajdive <divepankaj1@gmail.com>"
+  ],
+  "description": "",
+  "main": "demo.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8"
+  }
+}

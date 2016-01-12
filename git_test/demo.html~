@@ -42,11 +42,9 @@
             <div class="content-div-two">
 
                 <span class="fntxt" id="state">State: &nbsp;
-<<<<<<< HEAD
-                    <select class="control-form" id="statedd" name="stateselect" <!-- onchange="srcChange(this.options[this.selectedIndex].value);" -->>
-=======
+
                     <select class="control-form" id="category" name="category" onchange="javascript: dropdownlist(this.options[this.selectedIndex].value);">
->>>>>>> d254252a12a9027356255f7a0a5d79c319aa184c
+
                     <option value="maharashtra">
                         Maharashtra
                     </option>
@@ -76,13 +74,8 @@
                     </option>
                 </select></span><br>
 
-
-
-<<<<<<< HEAD
-                <span class="fntxt"><label id-"subject"> Subject:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
-=======
                 <span class="fntxt">Subject:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
->>>>>>> d254252a12a9027356255f7a0a5d79c319aa184c
+
                 <table>
                     <tr>
                         <td><input class="control-form-course" name=
@@ -115,13 +108,6 @@
 
     </div>
 
-<<<<<<< HEAD
-        
-        
-=======
-
-
->>>>>>> d254252a12a9027356255f7a0a5d79c319aa184c
 </body>
 
 
