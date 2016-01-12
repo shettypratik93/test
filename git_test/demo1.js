@@ -26,8 +26,8 @@ function dropdownlist(listindex) {
                 break;
 
         }
-        return true;
-    };
+        // return true;
+            };
 
 var flag=true;
 
