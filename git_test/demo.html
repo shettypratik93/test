@@ -6,12 +6,15 @@
     <title>Test InterviewAir</title>
   <script src="demo1.js" type="text/javascript"></script> 
     <link href="style.css" rel="stylesheet">
+
 </head>
+
 <body id="mbody">
 
-	    <div class="head">
-        
-        <img align="center" class="left" height="58px" src="left.png" width=
+    <script type="text/javascript" src="demo1.js"></script>
+        <div class="head">
+
+1       <img align="center" class="left" height="58px" src="left.png" width=
         "53px"> <img class="logo" src="ins.png"> <label class=
         "head-name">Interview Air</label> <a href="#"><img class="right" src=
         "home.png">
@@ -19,7 +22,7 @@
             <li class="li1"><img height="30px" src="setting.jpg" width="30px">Setting</li>
             <li class="li2"><img height="30px" src="Logo.png" width="30px">Logout</li>
         </ul></a>
-   		</div>
+       </div>
    		<div class="form-div">
         <form name="reg" method="post">
             <div class="content-div-one">
@@ -28,7 +31,7 @@
                 <span class="fntxt">Last Name: <input class="control-form"
                 id="ln" name="txtlname" size="10" type="text" maxlength="50" id="ln" oninput="Lnameval()"></span><br>
                 <span class="fntxt">Gender: &nbsp;&nbsp;&nbsp;<input checked class="control-form" name=
-                "gender" type="radio" value="gender">Female
+                "gender" type="radio" value="female">Female
                 <input class="control-form" name="gender" type="radio" id="gender1"
                 value="male"> Male <br></span>
                 Address:<br>
@@ -37,16 +40,20 @@
             </div>
             <div class="content-div-two">
                 <span class="fntxt" id="state">State: &nbsp;
-                    <select class="control-form" id="statedd" name="stateselect" onchange="srcChange(this.options[this.selectedIndex].value);">
+
+                    <select class="control-form" id="category" name="category" onchange="javascript: dropdownlist(this.options[this.selectedIndex].value);">
                     <option value="maharashtra">
                         Maharashtra
                     </option>
                     <option value="gujarat">
                         Gujarat
                     </option>
+                    <option value="Karnataka">
+                        Karnataka
+                    </option>
                 </select></span><br>
                 <span class="fntxt" id="city">City: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <select class="control-form" name="cityselect" id="citydd">
+                    <select class="control-form" name="subcategory" id="subcategory">
                 </select></span><br>
                 
                 <span class="fntxt">College:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <select class="control-form" name=
@@ -63,37 +70,39 @@
                 </select></span><br>
                 <span class="fntxt"><input type="input" id="subject" value="Subject:" disabled>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+
                 <table>
                     <tr>
                         <td><input class="control-form-course" name=
-                        "crse" type="checkbox" value="account" id="csub"> Accounting</td>
+                        "crse" type="checkbox" value="account"> Accounting</td>
                         <td><input class="control-form-course" name="crse"
-                        type="checkbox" value="art" id="csub"> Art History</td>
+                        type="checkbox" value="art"> Art History</td>
                     </tr>
                     <tr>
                         <td><input class="control-form-course" name="crse"
-                        type="checkbox" value="bio" id="csub"> Biology</td>
+                        type="checkbox" value="bio"> Biology</td>
                         <td><input class="control-form-course" name="crse"
-                        type="checkbox" value="computer" id="csub"> Computer</td>
+                        type="checkbox" value="computer"> Computer</td>
                     </tr>
                     <tr>
                         <td><input class="control-form-course" name="crse"
-                        type="checkbox" value="engg" id="csub"> Engineering</td>
+                        type="checkbox" value="engg"> Engineering</td>
                         <td><input class="control-form-course" name="crse"
-                        type="checkbox" value="geog" id="csub"> Geography</td>
+                        type="checkbox" value="geog"> Geography</td>
                     </tr>
                 </table>
             </div>
             <div class="btn-div">
-                <input id="btn-reset" name="btnreset" type="reset" value=
-                "RESET"> <input id="btn-save" name="btnsub" type="button"
-                value="SAVE" onclick="validate();">
+                <input id="btn-reset" name="btnreset" type="reset" value= "RESET"> 
+                <input id="btn-save" name="btnsub" type="button" value="SAVE" onclick="validate()">
             </div>
         </form>
 		<div id="result-div">
 
     	</div>
+
     </div>
 </body>
+
 
 </html>
