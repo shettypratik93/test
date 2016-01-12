@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "test",
   "homepage": "https://github.com/shettypratik93/test",
   "authors": [
@@ -6,6 +7,15 @@
   ],
   "description": "",
   "main": "",
+=======
+  "name": "BowerTest",
+  "homepage": "https://github.com/shettypratik93/test",
+  "authors": [
+    "pankajdive <divepankaj1@gmail.com>"
+  ],
+  "description": "",
+  "main": "demo.html",
+>>>>>>> 444833b9f0938764dd19f948d7fbc165af6b5dd4
   "moduleType": [],
   "license": "MIT",
   "private": true,
