@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+
+	<link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/home/riddhi/Documents/test/bower_components/angular-material/angular-material.min.css"/>
+</head>
+<body ng-app="myblog" ng-controller="mainCtrl">
+
+		<!-- <div class="menudiv">
+			<md-menu layout="row" layout-align="space-around center">
+
+				<md-menu>
+					<md-button>
+               			 Home
+           			 </md-button>
+
+				</md-menu>
+
+				<md-menu>
+					<md-button>
+               			 Nature
+           			 </md-button>
+
+				</md-menu>
+
+
+				<md-menu>
+					<md-button>
+               			 Food
+           			 </md-button>
+
+				</md-menu>
+
+
+				<md-menu>
+					<md-button>
+               			 New
+           			 </md-button>
+
+				</md-menu>
+			</md-menu>
+
+		</div> -->
+
+<!-- 
+		<div class="headimg">
+
+			<img class="headimg" src="naturehomepg.jpg" alt="Nature at its best"></img>
+		</div>
+
+
+
+		<div class="contentdiv">
+
+
+			<md-card class="contentcard">
+				<md-card-content> -->
+					
+					<md-card-title>
+   						 <md-card-title-text  layout-align="center center">
+    						<span class="md-headline">ADD NEW BLOG</span>      						
+    					 </md-card-title-text>
+  					</md-card-title>
+
+  					<div class="addnew">
+
+  						<form name="reg" layout="column">
+
+  							 <md-input-container>
+                
+              				 <input id="title" name="txttitle" size="30" type="text" ng-maxlength="50" ng-model="btitle" placeholder="Enter Blog Title:" required>
+                
+              				 </md-input-container>
+
+              				
+
+                        <span ng-messages="reg.txttitle.$error" style="color:red" role="alert" ng-show="reg.txttitle.$touched && reg.txttitle.$error.required">
+                <span ng-message="required">Enter data</span>
+              
+                <span ng-message="maxlength">Long input</span>
+                 </span>
+
+
+                			<md-input-container>
+                    		<md-select class="control-form" id="category" name="category" ng-model="category1" placeholder="Blog Category: " required>
+                   			 <md-option  value="nature">Nature</md-option>
+                   			 <md-option  value="food">Food</md-option>
+                   			 </md-select>
+               				</md-input-container>
+
+                      <span ng-messages="reg.category.$error" style="color:red" role="alert" ng-show="reg.txtcategory.$touched && reg.category.$error.required">
+                      <span ng-message="required">Select category</span>
+              
+              
+                     </span>
+
+
+	                		<md-input-container>
+                
+              				 <input id="path" name="txtpath" size="30" type="text" ng-model="imgpath" placeholder="Enter image path:" required>
+                
+              				 
+                			</md-input-container>
+                      <span ng-messages="reg.txtpath.$error" style="color:red" role="alert" ng-show="reg.txtpath.$touched && reg.txtpath.$error.required">
+                <span ng-message="required">Enter data</span>
+              
+                 </span>
+
+
+                			<md-input-container>
+                
+              				 <input name="txttext" ng-maxlength="300" md-maxlength="300" type="text" ng-model="blogtext" placeholder="Enter blog content:" required>
+                
+              				
+                			</md-input-container>	
+                      <span ng-messages="reg.txttext.$error" style="color:red" role="alert" ng-show="reg.txttext.$touched && reg.txttext.$error.required">
+                <span ng-message="required">Enter data</span>
+              
+                <span ng-message="maxlength">Long input</span>
+                 </span>
+
+
+                			 <md-button class="md-raised md-primary" name="btnsub" value= "SAVE" ng-click="submitForm(reg.$valid)" ng-disabled="reg.$invalid">SAVE</md-button>
+            
+
+  						</form>
+
+  					</div>
+
+			<!-- 	</md-card-content>
+			</md-card>
+		</div>
+ -->
+
+		<script src="/home/riddhi/Documents/test/bower_components/angular/angular.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-messages/angular-messages.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-material/angular-material.min.js"></script>
+
+    
+        <script src="blogjs.js" type="text/javascript"></script> 
+
+</body>
+</html>
