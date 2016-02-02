@@ -30,9 +30,10 @@
 	width:80%;
 	/*overflow-y:auto;*/
 	text-align: "center";
-	margin-top: 2%;
+	margin-top: -8%;
 	background-color: white !important;
 	opacity: 1!important;
+	font-family:"Times New Roman"; 
 
 
 }
@@ -70,5 +71,5 @@
 	width:80%;
 	/*display:inline-block;*/
 	height:20%;
-
+	
 }
