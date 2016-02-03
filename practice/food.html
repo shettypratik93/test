@@ -6,7 +6,7 @@
 	<link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="/home/riddhi/Documents/test/bower_components/angular-material/angular-material.min.css"/>
 </head>
-<body ng-app="myblog" ng-controller="mainCtrl">
+<body ng-app="myblog" ng-controller="mainCtrl as m">
 
 <!-- 		<div class="menudiv">
 			<md-menu layout="row" layout-align="space-around center">
@@ -64,12 +64,12 @@
     					 </md-card-title-text>
   					</md-card-title>
 
-  					<div class="bloglist" ng-repeat="item in foodarray">
+  					<div class="bloglist" ng-repeat="item in fordisplayf">
 
   							<img class="listimg" ng-src="{{item.imgpath}}"></img>
-  							<span class="titlespan">{{item.title}}</span>
+  							<span class="titlespan"><b>Title: </b>{{item.title}}</span>
   							<!-- <span class="catspan"><b>Category: </b>{{item.category}}</span> -->
-  							<div class="txtdiv">{{item.blogtext}}</div>
+  							<div>{{item.blogtext}}</div>
 
 
 
