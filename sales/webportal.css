@@ -1,0 +1,137 @@
+.main{
+	height: 100%;
+	width: 100%;
+	horizantal-align: middle;
+	 display: inline-block;
+	 text-align: center ; 
+	  display: inline-block;
+    position: relative;
+    height: 500px;
+    width: 600px;
+    background: red;
+    margin: 8px;
+    border-radius: 5px;
+    z-index: 0;
+    background-color:  grey;
+    padding-top: 20px;
+    box-shadow: 10px 10px 20px #d3d3d3;
+}
+md-icon{
+	
+}
+.md-toolbar-tools{
+	background-color: #2a2a2a;
+}
+body{
+	background-color: #f6f6f6;
+	background-image: url("bg2.jpg");
+}
+.type-div{
+padding-bottom: 20px;
+}
+.budget-div{
+	padding-top: 4px;
+}
+.main-div{
+	text-align: center ; 
+}
+md-card{
+	background-color: #f6f6f6;
+}
+md-toolbar{
+	background-color:
+	 /*opacity: 0.0;*/
+	
+}
+.footer{
+	height: 20px;
+	background-color: #4C4646;
+}
+.ip{
+	color: #1E90FF;
+}
+.pnkj{
+	color: lawngreen;
+}
+.left{
+	padding-left: 25px;
+}
+.right{
+	padding-left:105px;
+}
+/*<md-card>
+            <form name="web" method="post" id="webform" class="frm1" ng-submit="$event.preventDefault()">
+                <div layout="rows">
+                    <div>
+                        <div layout="column" class="left-div">
+                            <div>
+                                <md-input-container>
+                                    <input class="control-form" name="txtshopname" placeholder="Shop name" type="text" ng-model="shopname" ng-maxlength="20" ng-pattern="Regex" required>
+                                    <md-tooltip md-direction="top">
+                                        Enter First name!
+                                    </md-tooltip>
+                                    <br>
+                                    <div>
+                                        <div ng-messages="reg.txtname.$error" role="alert" style="color:maroon; font-size:10px;" ng-if='reg.txtname.$dirty'>
+                                            <br>
+                                            <div ng-message="required">required!</div>
+                                            <div ng-message="pattern ">letters only!</div>
+                                            <div ng-message="maxlength">Your field is too long</div>
+                                        </div>
+                                    </div>
+                                </md-input-container>
+                            </div>
+                            <div>
+                                <md-input-container>
+                                    <input class="control-form" id="fn" name="txtOwnername" placeholder="Owner name" type="text" ng-model="ownername" ng-maxlength="20" ng-pattern="Regex" required>
+                                    <md-tooltip md-direction="top">
+                                        Enter First name!
+                                    </md-tooltip>
+                                    <br>
+                                    <div>
+                                        <div ng-messages="reg.txtname.$error" role="alert" style="color:maroon; font-size:10px;" ng-if='reg.txtname.$dirty'>
+                                            <br>
+                                            <div ng-message="required">required!</div>
+                                            <div ng-message="pattern ">letters only!</div>
+                                            <div ng-message="maxlength">Your field is too long</div>
+                                        </div>
+                                    </div>
+                                </md-input-container>
+                            </div>
+                            <div>
+                                <md-select>
+                                    <md-option ng-repeat="type in types" ng-value="type">
+                                        {{type}}
+                                    </md-option>
+                                </md-select>
+                            </div>
+                        </div>
+                        <div layout="column" class="right-div">
+                            <div>
+                                <md-input-container>
+                                    <label>Address:</label>
+                                    <input type="text" ng-model="addressarea" />
+                                    <input type="text" ng-model="addresscity" />
+                                    <input type="text" ng-model="addressdist" />
+                                    <input type="number" ng-model="addresspin" />
+                                </md-input-container>
+                            </div>
+                            <div>
+                                <md-input-container>
+                                    <label>Budget:</label>
+                                    <input type="number" ng-model="addresspin" />
+                                </md-input-container>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <md-button ng-model="change" ng-click="reset()" id="btn-reset">Report</md-button>
+                        </div>
+                        <div>
+                            <md-button ng-model="change" ng-click="reset()" id="btn-reset">Save</md-button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </md-card>*/
