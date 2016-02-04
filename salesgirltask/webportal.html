@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html ng-app="portal">
+
+    <head>
+        <link rel="stylesheet" href="/home/pankaj/Documents/Monster Instinct/test/bower_components/angular-material/angular-material.min.css">
+        <!--script type="text/javascript" src="/home/pankaj/Documents/Monster Instinct/test/bower_components/angular/angular.js"></script-->
+        <script type="text/javascript"></script>
+        <link href="webportal.css" rel="stylesheet">
+        <title></title>
+    </head>
+
+    <body ng-controller="webportal as web">
+     <div>
+            <md-toolbar class="md-warn">
+                <div class="md-toolbar-tools">
+                    <center>Cookie & Chips Pvt. Ltd.</center>
+                     
+                </div>
+                </md-toolbar>
+        </div>
+        <div class="main">
+             <md-input-container>
+                                    <input class="control-form" name="txtshopname" placeholder="Shop name" type="text" ng-model="shopname" ng-maxlength="20" ng-pattern="Regex" required>
+                                    <md-tooltip md-direction="top">
+                                        Enter First name!
+                                    </md-tooltip>
+                                    <br>
+                                    <div>
+                                        <div ng-messages="reg.txtname.$error" role="alert" style="color:maroon; font-size:10px;" ng-if='reg.txtname.$dirty'>
+                                            <br>
+                                            <div ng-message="required">required!</div>
+                                            <div ng-message="pattern ">letters only!</div>
+                                            <div ng-message="maxlength">Your field is too long</div>
+                                        </div>
+                                    </div>
+                                </md-input-container>
+        </div>
+        <script src="/home/pankaj/Documents/Monster Instinct/test/bower_components/angular/angular.js"></script>
+        <script src="/home/pankaj/Documents/Monster Instinct/test/bower_components/angular-messages/angular-messages.js"></script>
+        <script src="/home/pankaj/Documents/Monster Instinct/test/bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="/home/pankaj/Documents/Monster Instinct/test/bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="/home/pankaj/Documents/Monster Instinct/test/bower_components/angular-material/angular-material.min.js"></script>
+        <script src="/home/pankaj/Documents/Monster Instinct/test/node_modules/angular-material-icons/angular-material-icons.min.js"></script>
+        <script src="/home/pankaj/Documents/Monster Instinct/test/bower_components/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="webportal.js"></script>
+    </body>
+
+    </html>>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html ng-app="portal">
+
+<head>
+    
+	 <link rel="stylesheet" href="/home/riddhi/Documents/test/bower_components/angular-material/angular-material.min.css"/>
+
+    <script type="text/javascript"></script>
+    <link href="webportal.css" rel="stylesheet">
+    <title></title>
+</head>
+
+<body ng-controller="webportal as web">
+    <center>
+    <form name="reg">
+        <div layout="row">
+            <div class="left">
+                <div>
+                    <md-input-container>
+                        <input class="control-form" name="txtshopname" placeholder="Shop name" type="text" ng-model="shopname" ng-maxlength="20" required>
+                        <md-tooltip md-direction="top">
+                            Enter First name!
+                        </md-tooltip>
+                        <br>
+                        <div>
+                            <div ng-messages="reg.txtshopname.$error" role="alert" style="color:maroon; font-size:10px;" ng-hide="reg.txtshopname.$pristine" ng-show="reg.txtshopname.$error">
+
+                            <!-- ng-if='reg.txtname.$dirty' -->
+                                <br>
+                                <div ng-message="required">required!</div>
+                              
+                                <div ng-message="maxlength">Your field is too long</div>
+                            </div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div>
+                    <md-input-container>
+                        <input class="control-form" id="fn" name="txtOwnername" placeholder="Owner name" type="text" ng-model="ownername" ng-maxlength="20" ng-pattern="Regex" required>
+                        <md-tooltip md-direction="top">
+                            Enter First name!
+                        </md-tooltip>
+                        <br>
+                        <div>
+                            <div ng-messages="reg.txtOwnername.$error" role="alert" style="color:maroon; font-size:10px;" ng-if='reg.txtOwnername.$dirty' ng-hide="isVisible">
+                                <br>
+                                <div ng-message="required">required!</div>
+                                <div ng-message="pattern ">letters only!</div>
+                                <div ng-message="maxlength">Your field is too long</div>
+                            </div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div class="type-div">
+                    <md-input-container>
+                        <label>Type Of Shope:</label>
+                        <md-select ng-model="shoptype">
+                            <md-option ng-repeat="type in types" ng-value="type">
+                                {{type}}
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+                </div>
+                <div>
+                 <md-input-container>
+                    <label>Budget:</label>
+                    <input type="number" ng-model="budget" />
+                </md-input-container>
+                </div>
+                <div>
+                    <md-input-container>
+                        <md-button ng-model="addShop" ng-click="addShop()" id="btn-reset">ADD</md-button>
+                    </md-input-container>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <md-input-container>
+                        <input type="text" name="txtaddr" rows="5" cols="19" ng-model="txtarea" placeholder="Area" id="txtaddr" ng-maxlength="50">
+                        <!-- <div> -->
+                        <div ng-messages="reg.txtaddr.$error" role="alert" style="color:maroon; font-size:15px;" ng-if='reg.txtaddr.$dirty'>
+                            <br>
+                            <div ng-message="maxlength">Your field is too long</div>
+                            <div ng-message="required">required!</div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div>
+                    <md-input-container>
+                        <input type="text" name="txtaddr" rows="5" cols="19" ng-model="txtcity" placeholder="City" id="txtaddr" ng-maxlength="50">
+                        <!-- <div> -->
+                        <div ng-messages="reg.txtaddr.$error" role="alert" style="color:maroon; font-size:15px;" ng-if='reg.txtaddr.$dirty'>
+                            <br>
+                            <div ng-message="maxlength">Your field is too long</div>
+                            <div ng-message="required">required!</div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div>
+                    <md-input-container>
+                        <input type="text" name="txtaddr" rows="5" cols="19" ng-model="txtdist" placeholder="District" id="txtaddr" ng-maxlength="50">
+                        <!-- <div> -->
+                        <div ng-messages="reg.txtaddr.$error" role="alert" style="color:maroon; font-size:15px;" ng-if='reg.txtaddr.$dirty'>
+                            <br>
+                            <div ng-message="maxlength">Your field is too long</div>
+                            <div ng-message="required">required!</div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div>
+                    <md-input-container>
+                        <input type="number" name="txtaddr" rows="5" cols="19" ng-model="txtpin" placeholder="Pincode" id="txtaddr" ng-maxlength="50">
+                        <!-- <div> -->
+                        <div ng-messages="reg.txtaddr.$error" role="alert" style="color:maroon; font-size:15px;" ng-if='reg.txtaddr.$dirty'>
+                            <br>
+                            <div ng-message="maxlength">Your field is too long</div>
+                            <div ng-message="required">required!</div>
+                        </div>
+                    </md-input-container>
+                </div>
+            
+            
+            <div>
+                <md-button ng-model="change" ng-click="generateReport()" id="btn-reset">REPORT</md-button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+
+        <script src="/home/riddhi/Documents/test/bower_components/angular/angular.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-messages/angular-messages.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-material/angular-material.min.js"></script>
+
+    
+        <script src="webportal.js" type="text/javascript"></script> 
+
+
+       
+       </form> 
+    </center>
+</body>
+
+</html>

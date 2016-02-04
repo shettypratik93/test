@@ -1,0 +1,83 @@
+.main{
+	height: 100%;
+	width: 100%;
+}
+.type-div{
+padding-bottom: 10px;
+}
+/*<md-card>
+            <form name="web" method="post" id="webform" class="frm1" ng-submit="$event.preventDefault()">
+                <div layout="rows">
+                    <div>
+                        <div layout="column" class="left-div">
+                            <div>
+                                <md-input-container>
+                                    <input class="control-form" name="txtshopname" placeholder="Shop name" type="text" ng-model="shopname" ng-maxlength="20" ng-pattern="Regex" required>
+                                    <md-tooltip md-direction="top">
+                                        Enter First name!
+                                    </md-tooltip>
+                                    <br>
+                                    <div>
+                                        <div ng-messages="reg.txtname.$error" role="alert" style="color:maroon; font-size:10px;" ng-if='reg.txtname.$dirty'>
+                                            <br>
+                                            <div ng-message="required">required!</div>
+                                            <div ng-message="pattern ">letters only!</div>
+                                            <div ng-message="maxlength">Your field is too long</div>
+                                        </div>
+                                    </div>
+                                </md-input-container>
+                            </div>
+                            <div>
+                                <md-input-container>
+                                    <input class="control-form" id="fn" name="txtOwnername" placeholder="Owner name" type="text" ng-model="ownername" ng-maxlength="20" ng-pattern="Regex" required>
+                                    <md-tooltip md-direction="top">
+                                        Enter First name!
+                                    </md-tooltip>
+                                    <br>
+                                    <div>
+                                        <div ng-messages="reg.txtname.$error" role="alert" style="color:maroon; font-size:10px;" ng-if='reg.txtname.$dirty'>
+                                            <br>
+                                            <div ng-message="required">required!</div>
+                                            <div ng-message="pattern ">letters only!</div>
+                                            <div ng-message="maxlength">Your field is too long</div>
+                                        </div>
+                                    </div>
+                                </md-input-container>
+                            </div>
+                            <div>
+                                <md-select>
+                                    <md-option ng-repeat="type in types" ng-value="type">
+                                        {{type}}
+                                    </md-option>
+                                </md-select>
+                            </div>
+                        </div>
+                        <div layout="column" class="right-div">
+                            <div>
+                                <md-input-container>
+                                    <label>Address:</label>
+                                    <input type="text" ng-model="addressarea" />
+                                    <input type="text" ng-model="addresscity" />
+                                    <input type="text" ng-model="addressdist" />
+                                    <input type="number" ng-model="addresspin" />
+                                </md-input-container>
+                            </div>
+                            <div>
+                                <md-input-container>
+                                    <label>Budget:</label>
+                                    <input type="number" ng-model="addresspin" />
+                                </md-input-container>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <md-button ng-model="change" ng-click="reset()" id="btn-reset">Report</md-button>
+                        </div>
+                        <div>
+                            <md-button ng-model="change" ng-click="reset()" id="btn-reset">Save</md-button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </md-card>*/
