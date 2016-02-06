@@ -1,0 +1,112 @@
+.main{
+    height: 100%;
+    width: 100%;
+    horizantal-align: middle;
+     display: inline-block;
+     text-align: center ; 
+      display: inline-block;
+    position: relative;
+    height: 500px;
+    width: 600px;
+    margin: 8px;
+    border-radius: 5px;
+    z-index: 0;
+    background-color: grey;
+    padding-top: 20px;
+    box-shadow: 10px 10px 20px #d3d3d3;
+}
+md-icon{
+    
+}
+.img{
+    border: 2px solid;
+    border-color: grey;
+}
+.res{
+
+}
+.btn{
+    background-color: grey;
+    color:white;
+     cursor: pointer;
+      border: none;
+      /*background-color: #4CAF50;
+   
+    color: white;*/
+    }
+    label{
+        float: left;
+    }
+b
+{
+    color: sky
+}
+.med{
+    margin-bottom: 4px;
+    margin-right: 70px;
+}
+#med1{
+     margin-right: 70px;
+}
+a{
+    color: blue;
+}
+.md-toolbar-tools{
+    background-color: #2a2a2a;
+    padding-left: 500px;
+}
+.total{
+height: 130px;
+float: left;
+}
+.all{
+    float: right;
+    margin-left: 50px;
+
+}
+body{
+    background-color: #CAC7C6;
+    background-image: url("b.jpg");
+    font-family:FreeSerif;
+
+}
+.type-div{
+padding-bottom: 20px;
+float: left;
+}
+.budget-div{
+    padding-top: 4px;
+    padding-bottom: 22px;
+}
+.main-div{
+    text-align: center ; 
+}
+md-card{
+    background-color: #f6f6f6;
+}
+/*md-toolbar{
+    background-color:
+     /*opacity: 0.0;*/
+    
+}*/
+.ft{
+    height: 20px;
+    background-color: #4C4646;
+}
+.ip{
+    color: #1E90FF;
+}
+.pnkj{
+    color: lawngreen;
+}
+.left{
+    padding-left: 25px;
+}
+.right{
+    padding-left:105px;
+}
+.graphdiv{
+    float:right;
+    margin-left: 50px;
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="portal">
+
+<head>
+   <link rel="stylesheet" href="/home/riddhi/Documents/test/bower_components/angular-material/angular-material.min.css"/> <!--script type="text/javascript" src="/home/pankaj/Documents/Monster Instinct/test/bower_components/angular/angular.js"></script-->
+    <link href="webportal.css" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+
+   <div><center><img src="back.png" class="backbtn" ui-sref="Form"></center><h3>GENERATED REPORTS</h3></div>
+
+<div class="res" layout="row" layout-xs="column">
+
+<div layout="column" class="total">
+   <div>
+    <label>shop visited: <b>{{noshops}}</b></label><br>
+    <label>Total budget:<b> {{sumall}}</b></label><br>
+    <label>Average budget:<b> {{allavg}}</b></label><br><br><br><br><br><br><br><br><br>
+    </div>
+
+     <div class="graphdiv" fusioncharts width="150" height="150" type="column2d" dataSource="{{graphvalue}}">
+
+
+    </div>  
+
+</div>
+<div layout="column" class="all">
+    <div class="med" >
+    <label>Medical shops: <b>{{nomed}}</b></label><br>
+    <label>Medical budget: <b>{{medsum}}</b></label><br>
+    <label>Medical avg:<b> {{medavg}}</b></label><br><br>
+
+    <label>Super Markets: <b>{{nosuper}}</b></label><br>
+    <label>Supermarket budget: <b>{{supersum}}</b></label><br>
+    <label>Supermarket avg: <b>{{superavg}}</b></label><br><br>
+
+    
+    <label>rocery shops: <b>{{nogrocery}}</b></label><br>
+    <label>Grocery shop budget: <b>{{grocerysum}}</b></label><br>
+    <label>Grocery shop avg: <b>{{groceryavg}}</b></label><br>
+
+    </div>
+    <div id="med1" class="graphdiv1" fusioncharts width="150" height="150" type="column2d" dataSource="{{graphvalue2}}">
+
+
+    </div> 
+</div>
+       
+    
+
+</div>
+    <script src="/home/riddhi/Documents/test/bower_components/angular/angular.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-messages/angular-messages.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-material/angular-material.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+        
+        <script type="text/javascript" src="/home/riddhi/Documents/demosales/js/fusioncharts.js"></script>
+
+        
+        <script type="text/javascript" src="/home/riddhi/Documents/demosales/js/themes/fusioncharts.theme.ocean.js"></script>
+
+
+    
+    <script type="text/javascript" src="webportal.js"></script>
+    <script type="text/javascript" src="/home/riddhi/Documents/demosales/angular-fusioncharts-3.1/dist/angular-fusioncharts.min.js"></script>
+
+</body>
+
+</html>

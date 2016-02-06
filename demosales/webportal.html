@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="portal">
+
+<head>
+    <link rel="stylesheet" href="/home/riddhi/Documents/test/bower_components/angular-material/angular-material.min.css"/><!--script type="text/javascript" src="/home/pankaj/Documents/Monster Instinct/test/bower_components/angular/angular.js"></script-->
+    <link href="webportal.css" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <div>
+        <md-toolbar>
+            <div class="md-toolbar-tools" ui-sref="Form">
+                <p class="ip"><i>Cookie </i></p>&nbsp& <i>&nbspChips</i>&nbsp Pvt. Ltd.
+            </div>
+        </md-toolbar>
+    </div>
+    <center>
+        <div class="main">
+            <md-card>
+                <div ui-view="mainview">
+                    Welcome to sales report generation!
+                    <br> Follow the link to start
+                    <br>
+                    <a ui-sref="Form">Click to start</a>
+                     <div>
+                    <img src="sales.jpg" class="img">
+                </div>
+                </div>
+               
+            </md-card>
+        </div>
+        <!--   <md-toolbar class="md-toolbar-tools">
+        </md-toolbar> -->
+    </center>
+   
+    <!-- </md-card> -->
+    <!-- </div> -->
+    <script src="/home/riddhi/Documents/test/bower_components/angular/angular.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-messages/angular-messages.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-material/angular-material.min.js"></script>
+        <script src="/home/riddhi/Documents/test/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+        
+        <script type="text/javascript" src="/home/riddhi/Documents/demosales/js/fusioncharts.js"></script>
+
+        
+        <script type="text/javascript" src="/home/riddhi/Documents/demosales/js/themes/fusioncharts.theme.ocean.js"></script>
+
+
+    
+    <script type="text/javascript" src="webportal.js"></script>
+    <script type="text/javascript" src="/home/riddhi/Documents/demosales/angular-fusioncharts-3.1/dist/angular-fusioncharts.min.js"></script>
+
+</body>
+
+</html>

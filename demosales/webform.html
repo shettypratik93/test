@@ -1,0 +1,136 @@
+<form name="reg">
+    <div layout="column" class="main-div">
+        <div layout="row" layout-xs="column">
+            <div class="left">
+                <div>
+                    <md-input-container>
+                        <input class="control-form" name="txtshopname" placeholder="Shop name" type="text" ng-model="shopname" ng-maxlength="20" required>
+                        <md-tooltip md-direction="top">
+                            Enter First name!
+                        </md-tooltip>
+                        <!-- <br> -->
+                        <div>
+                            <div ng-messages="reg.txtshopname.$error" role="alert" style="color:maroon; font-size:10px;" ng-if='reg.txtshopname.$dirty' pattern="" maxlength="50" required>
+                                <br>
+                                <div ng-message="required">required!</div>
+                                <div ng-message="maxlength">Your field is too long</div>
+                            </div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div>
+                    <md-input-container>
+                        <input class="control-form" id="fn" name="txtOwnername" placeholder="Owner name" type="text" ng-model="ownername" ng-maxlength="20" ng-pattern="Regex" required>
+                        <md-tooltip md-direction="top">
+                            Enter First name!
+                        </md-tooltip>
+                        <br>
+                        <div>
+                            <div ng-messages="reg.txtOwnername.$error" role="alert" style="color:maroon; font-size:10px;" ng-if='reg.txtOwnername.$dirty'>
+                                <br>
+                                <div ng-message="required">required!</div>
+                                <div ng-message="pattern ">letters only!</div>
+                                <div ng-message="maxlength">name is too long</div>
+                            </div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div class="type-div">
+                    <md-input-container>
+                        <label>Type Of Shop:</label>
+                        <md-select ng-model="shoptype" name="shoptype" required>
+                            <md-option ng-repeat="type in types" ng-value="type">
+                                {{type}}
+                            </md-option>
+                        </md-select>
+                        <div>
+                            <div ng-messages="reg.shoptype.$error" ng-show="reg.shoptype.$error && reg.shoptype.$touched" role="alert" style="color:maroon; font-size:10px;">
+                                <!-- ng-if='reg.shoptype.$touched'> -->
+                                <br>
+                                <div ng-message="required">required!</div>
+                            </div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div class="budget-div">
+                    <md-input-container>
+                        <label>Budget:</label>
+                        <input type="text" ng-model="budget" maxlength="20" name="budg" ng-pattern="RegexNum" required>
+                        <div>
+                            <div ng-messages="reg.budg.$error" role="alert" style="color:maroon; font-size:10px;" ng-if='reg.budg.$dirty' required>
+                                <br>
+                                <div ng-message="required">required!</div>
+                                <div ng-message="pattern ">Numbers not starting with 0 only!</div>
+                            </div>
+                        </div>
+                    </md-input-container>
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <md-input-container>
+                        <input type="text" name="txtaddr" ng-model="txtarea" placeholder="Area" id="txtaddr" ng-maxlength="20" ng-pattern="Regex" required>
+                        <!-- <div> -->
+                        <div ng-messages="reg.txtaddr.$error" role="alert" style="color:maroon; font-size:15px;" ng-if='reg.txtaddr.$dirty'>
+                            <br>
+                            <div ng-message="maxlength">area name is too long</div>
+                            <div ng-message="pattern ">letters only!</div>
+                            <div ng-message="required">required!</div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div>
+                    <md-input-container>
+                        <input type="text" name="txtCity" ng-model="txtcity" placeholder="City" id="txtaddr" ng-maxlength="20" ng-pattern="Regex" required>
+                        <!-- <div> -->
+                        <div ng-messages="reg.txtCity.$error" role="alert" style="color:maroon; font-size:15px;" ng-if='reg.txtCity.$dirty'>
+                            <br>
+                            <div ng-message="maxlength">city name is too long</div>
+                            <div ng-message="pattern ">letters only!</div>
+                            <div ng-message="required">required!</div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div>
+                    <md-input-container>
+                        <input type="text" name="txtDist" ng-model="txtdist" placeholder="District" id="txtaddr" ng-maxlength="20" ng-pattern="Regex" required>
+                        <!-- <div> -->
+                        <div ng-messages="reg.txtDist.$error" role="alert" style="color:maroon; font-size:15px;" ng-if='reg.txtDist.$dirty'>
+                            <br>
+                            <div ng-message="maxlength">district name is too long</div>
+                            <div ng-message="pattern ">letters only!</div>
+                            <div ng-message="required">required!</div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div>
+                    <md-input-container>
+                        <input type="text" name="txtPin" ng-model="txtpin" placeholder="Pincode" id="txtaddr" ng-maxlength="6" ng-minlength="6" ng-pattern="RegexNum" required>
+                        <!-- <div> -->
+                        <div ng-messages="reg.txtPin.$error" role="alert" style="color:maroon; font-size:15px;" ng-if='reg.txtPin.$dirty'>
+                            <br>
+                            <div ng-message="maxlength">6 digit only!</div>
+                            <div ng-message="minlength">6 digit needed!</div>
+                            <div ng-message="pattern">Numbers not starting with 0 only!</div>
+                            <div ng-message="required">required!</div>
+                        </div>
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+        <div layout="row" layout-xs="column">
+            <div class="leftbt">
+                <md-input-container>
+                <md-button ng-model="change" class="btn" ng-click="addShop()" id="btn-reset" class="md-raised" ng-disabled="reg.$invalid"><a ui-sref="Form">ADD</a></md-button>
+                </md-input-container>
+            </div>
+            <div class="rightbt">
+               
+                    <md-input-container>
+                        <md-button ng-model="change" class="btn" ng-click="generateReport()" id="btn-reset" class="md-raised" ng-disabled="reportCheck"><a ui-sref="Report">REPORT</a></md-button>
+                    </md-input-container>
+                
+            </div>
+        </div>
+    </div>
+</form>
