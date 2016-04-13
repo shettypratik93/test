@@ -1,0 +1,10 @@
+body
+{
+
+}
+.left {
+float:left;
+width: 180px;
+height: 100%;
+background: red;
+}
